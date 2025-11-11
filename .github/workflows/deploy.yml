@@ -39,6 +39,9 @@ jobs:
       
       - name: Add SPA fallback (404.html)
         run: cp docs/index.html docs/404.html
+
+      - name: Disable Jekyll
+        run: touch docs/.nojekyll
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
