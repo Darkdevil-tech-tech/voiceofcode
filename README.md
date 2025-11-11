@@ -64,6 +64,45 @@ This project is built with:
 
 Simply open [Lovable](https://lovable.dev/projects/f001425f-260b-4605-981f-82caf977fa44) and click on Share -> Publish.
 
+## Deploy to GitHub Pages
+
+This project is configured to deploy automatically to GitHub Pages. Follow these steps:
+
+### Step 1: Enable GitHub Pages
+
+1. Go to your repository on GitHub
+2. Click on **Settings** (in the repository menu)
+3. Scroll down to **Pages** in the left sidebar
+4. Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
+5. Save the settings
+
+### Step 2: Push to GitHub
+
+The GitHub Actions workflow will automatically:
+- Build your project when you push to the `main` branch
+- Deploy it to GitHub Pages
+
+Just push your code:
+```sh
+git add .
+git commit -m "Setup GitHub Pages"
+git push origin main
+```
+
+### Step 3: Access Your Site
+
+After the workflow completes (check the **Actions** tab in your repository), your site will be available at:
+- `https://<your-username>.github.io/<repository-name>/`
+
+For example: `https://username.github.io/brototype-voice-main/`
+
+### Manual Deployment
+
+You can also trigger a manual deployment:
+1. Go to the **Actions** tab in your repository
+2. Select the **Deploy to GitHub Pages** workflow
+3. Click **Run workflow**
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!
