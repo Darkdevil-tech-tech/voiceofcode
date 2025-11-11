@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "pages": "npm run build && node -e \"const fs=require('fs');fs.copyFileSync('docs/index.html','docs/404.html')\"",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
